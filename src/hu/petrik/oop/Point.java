@@ -15,8 +15,12 @@ public class Point {
     }
 
     public Point(int n) {
-        this.x = (int) (Math.random() * ((2 * n) + 1)) - n;
-        this.y = (int) (Math.random() * ((2 * n) + 1)) - n;
+        this.x = generateCoordinates(n);
+        this.y = generateCoordinates(n);
+    }
+
+    private int generateCoordinates(int n) {
+        return (int) (Math.random() * ((2 * n) + 1)) - n;
     }
 
     public int getX() {
@@ -34,6 +38,7 @@ public class Point {
     public void setY(int y) {
         this.y = y;
     }
+
 
 
     @Override
