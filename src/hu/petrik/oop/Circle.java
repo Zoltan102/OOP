@@ -22,6 +22,10 @@ public class Circle {
         this.o = o;
     }
 
+    public double Perimeter() {
+        return 2 * Math.PI * r;
+    }
+
     @Override
     public String toString() {
         return "Circle{" + "o=" + o + ", r=" + r + '}';
