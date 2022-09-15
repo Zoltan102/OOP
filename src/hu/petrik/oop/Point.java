@@ -43,6 +43,10 @@ public class Point {
         return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
     }
 
+    public double DistanceToOtherPoint(Point p) {
+        return Math.sqrt(Math.pow(x - p.x, 2) + Math.pow(y - p.y, 2));
+    }
+
     @Override
     public String toString() {
         return String.format("[%d;%d]", x, y);
