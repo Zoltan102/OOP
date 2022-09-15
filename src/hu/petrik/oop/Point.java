@@ -39,8 +39,8 @@ public class Point {
         this.y = y;
     }
 
-    public double DistanceToOrigo(){
-        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2))
+    public double DistanceToOrigin() {
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2));
     }
 
     @Override
