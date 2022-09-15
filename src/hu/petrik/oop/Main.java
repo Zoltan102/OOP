@@ -12,7 +12,9 @@ public class Main {
         for (int i = 0; i < points.length; i++) {
             points[i] = new Point(100);
         }
-        Write(points);
+        for (Point p : points) {
+            System.out.println(p);
+        }
         int farthestPointIndex = 0;
         for (int i = 0; i < points.length; i++) {
             if (points[farthestPointIndex].DistanceToOrigin() < points[i].DistanceToOrigin()) {
@@ -28,14 +30,12 @@ public class Main {
     }
 
     public static void Circles() {
-
-    }
-
-    public static void Write(Point[] points) {
-        for (Point p : points) {
-            System.out.println(p);
+        Circle[] circles = new Circle[10];
+        for (int i = 0; i < circles.length; i++) {
+            circles[i] = new Circle();
+        }
+        for (Circle c : circles) {
+            System.out.println(c);
         }
     }
-
-
 }

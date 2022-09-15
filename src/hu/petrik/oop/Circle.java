@@ -8,7 +8,7 @@ public class Circle {
 
     public Circle() {
         Random rnd = new Random();
-        this.r = rnd.nextInt();
+        this.r = rnd.nextInt(100);
         this.o = new Point(100);
     }
 
