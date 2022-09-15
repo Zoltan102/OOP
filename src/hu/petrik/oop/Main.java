@@ -14,8 +14,12 @@ public class Main {
                 farthestPointIndex = i;
             }
         }
-        System.out.printf("A legtávolabbi pont az origótól a(z) %d pont, koordinátái: %s, origótól mért távolság: %.3f", (farthestPointIndex + 1), points[farthestPointIndex], points[farthestPointIndex].DistanceToOrigin());
-        System.out.printf("\nA két pont távolsága: %.3f pont az 1. pont koordinátái: %s, a 2. pont koordinátái: %s", points[0].DistanceToOtherPoint(points[1]), points[0], points[1]);
+        System.out.printf("A legtávolabbi pont az origótól a(z) %d pont, koordinátái: %s, origótól mért távolság: %.3f",
+                (farthestPointIndex + 1), points[farthestPointIndex], points[farthestPointIndex].DistanceToOrigin());
+        System.out.printf("\nA két pont távolsága: %.3f pont az 1. pont koordinátái: %s, a 2. pont koordinátái: %s",
+                points[0].DistanceToOtherPoint(points[1]), points[0], points[1]);
+
+        System.out.printf("\nA pont a függvény %d. részén található", points[1].Quarter());
     }
 
     public static void Write(Point[] points) {
