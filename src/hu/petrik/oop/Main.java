@@ -3,6 +3,11 @@ package hu.petrik.oop;
 public class Main {
 
     public static void main(String[] args) {
+        Points();
+        Circles();
+    }
+
+    public static void Points() {
         Point[] points = new Point[10];
         for (int i = 0; i < points.length; i++) {
             points[i] = new Point(100);
@@ -20,6 +25,10 @@ public class Main {
                 points[0].DistanceToOtherPoint(points[1]), points[0], points[1]);
 
         System.out.printf("\nA pont a függvény %d. részén található", points[1].Quarter());
+    }
+
+    public static void Circles() {
+
     }
 
     public static void Write(Point[] points) {
