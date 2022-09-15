@@ -22,6 +22,14 @@ public class Circle {
         this.o = o;
     }
 
+    public void Resize(int i) {
+        if (i < 0) {
+            r /= i;
+        } else if (i > 0) {
+            r *= i;
+        }
+    }
+
     public double Perimeter() {
         return 2 * Math.PI * r;
     }
