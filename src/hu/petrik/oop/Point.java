@@ -1,7 +1,5 @@
 package hu.petrik.oop;
 
-import java.util.Random;
-
 public class Point {
     private int x;
     private int y;
@@ -17,19 +15,19 @@ public class Point {
     }
 
     public Point(int n) {
-        Random rnd = new Random();
-        x = rnd.nextInt(n - (-n) + (-n));
-        y = rnd.nextInt(n - (-n) + (-n));
+        this.x = (int) (Math.random() * ((2 * n) + 1)) - n;
+        this.y = (int) (Math.random() * ((2 * n) + 1)) - n;
     }
 
-    public int getX(){
+    public int getX() {
         return x;
     }
+
     public void setX(int x) {
         this.x = x;
     }
 
-    public int getY(){
+    public int getY() {
         return y;
     }
 
@@ -38,9 +36,8 @@ public class Point {
     }
 
 
-
     @Override
     public String toString() {
-        return "[" + x + ";" + y + "]";
+        return String.format("[%d;%d]", this.x, this.y);
     }
 }
