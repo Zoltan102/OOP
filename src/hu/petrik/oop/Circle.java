@@ -21,4 +21,9 @@ public class Circle {
         this.r = r;
         this.o = o;
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" + "o=" + o + ", r=" + r + '}';
+    }
 }
