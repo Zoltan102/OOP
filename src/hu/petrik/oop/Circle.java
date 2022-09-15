@@ -1,17 +1,23 @@
 package hu.petrik.oop;
 
+import java.util.Random;
+
 public class Circle {
-    private int o;
+    private Point o;
     private int r;
 
-    public Circle{
-
+    public Circle() {
+        Random rnd = new Random();
+        this.r = rnd.nextInt();
+        this.o = new Point(100);
     }
+
     public Circle(int r) {
         this.r = r;
-        this.o = 0;
+        this.o = new Point(0, 0);
     }
-    public Circle(int r, int o) {
+
+    public Circle(int r, Point o) {
         this.r = r;
         this.o = o;
     }
