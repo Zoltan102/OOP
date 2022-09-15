@@ -24,7 +24,7 @@ public class Circle {
 
     public void Resize(int i) {
         if (i < 0) {
-            r /= i;
+            r /= -i;
         } else if (i > 0) {
             r *= i;
         }
