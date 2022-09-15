@@ -26,7 +26,7 @@ public class Circle {
         return 2 * Math.PI * r;
     }
 
-    public double Area(){
+    public double Area() {
         return Math.PI * Math.pow(r, 2);
     }
 
