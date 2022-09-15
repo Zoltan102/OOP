@@ -37,5 +37,13 @@ public class Main {
         for (Circle c : circles) {
             System.out.println(c);
         }
+        int biggestCircleIndex = 0;
+        for (int i = 0; i < circles.length; i++) {
+            if (circles[i].Area() > circles[biggestCircleIndex].Area()) {
+                biggestCircleIndex = i;
+            }
+        }
+        System.out.printf("A legnagyobb területű kör a(z) %d. kör, %s, területe: %.3f",
+                biggestCircleIndex, circles[biggestCircleIndex], circles[biggestCircleIndex].Area());
     }
 }
